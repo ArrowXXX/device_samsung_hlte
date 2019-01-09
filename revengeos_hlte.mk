@@ -16,11 +16,12 @@
 # Inherit from hlte device
 $(call inherit-product, device/samsung/hlte/full_hlte.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common RevengeOS stuff.
+$(call inherit-product, vendor/revengeos/config/common.mk)
+$(call inherit-product, vendor/revengeos/config/gsm.mk)
 
 # Include Bootanimation configuration
 TARGET_BOOT_ANIMATION_RES := 1080
 
 PRODUCT_DEVICE := hlte
-PRODUCT_NAME := arrow_hlte
+PRODUCT_NAME := revengeos_hlte
